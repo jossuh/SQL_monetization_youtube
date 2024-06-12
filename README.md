@@ -69,7 +69,7 @@ The SQL queries used to answer the business questions are included in the `sql_q
 
 For any questions or further information, please contact:
 
-- [LinkedIn](<www.linkedin.com/in/albertoromero-dataanalyst>)
+- [LinkedIn](<https://www.linkedin.com/in/albertoromero-dataanalyst>)
 - [Email](mailto:alberto.mendez1710@gmail.com)
 
 Feel free to connect and discuss the project or any other data analysis inquiries.
