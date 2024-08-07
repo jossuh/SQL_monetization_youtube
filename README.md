@@ -1,79 +1,52 @@
-# YouTube Monetization Data Analysis
+# YouTube Monetization
 
-This project provides an in-depth analysis of YouTube monetization data, focusing on channels from Mexico, USA, and Colombia. The analysis covers various aspects of monetization, taxes, and channel performance, offering valuable insights for optimizing YouTube channel strategies.
+![banner](banner.jpg)
 
-## Project Description
+## Description
 
-The "YouTube Monetization Data Analysis" project aims to answer the following business questions:
+This project demonstrates how to use SQL to answer various questions related to YouTube video monetization, following specific conditions and instructions. The dataset includes information about video views, countries, CMP (Cost per Mille), and video classifications. The context of the problem is as follows:
 
-1. **Crear un campo calculado que muestre el valor de la monetización del video y otra con los impuestos que estos generan.**
-   - *Create a calculated field to show the monetization value of the video and another field for the taxes generated.*
+YouTube monetizes the views of videos that content creators have on their platform based on several criteria. For this exercise, we consider that a video can only be monetized if comments are enabled and the video does not have classifications 29, 19, or 27, which represent categories not paid by YouTube. Monetization is based on paying the channel per 1000 views a video receives, known as CMP, which varies by country. Some countries are starting to tax income generated through digital platforms. For this exercise, we consider that Colombia imposes a 10% tax on video income unless the video belongs to classification 26 (health and care), which is exempt. If a country is not listed in the CMP table, the default CMP of the United Kingdom is used.
 
-2. **Monetización total por canales y los impuestos pagados por cada uno de ellos.**
-   - *Total monetization per channel and the taxes paid by each.*
+## Objectives
 
-3. **Considerando que tomaremos como meta de monetización para los canales de México el promedio de la monetización de ese país, cuál es la brecha que los canales de México tienen para alcanzar la meta.**
-   - *Considering the average monetization of channels in Mexico as the target, what is the gap for Mexican channels to reach this target?*
+The objective of this project is to answer specific questions related to YouTube video monetization using SQL. The questions provided are:
 
-4. **Cuántas visitas requieren los videos de los canales de USA para alcanzar una monetización de un millón de dólares.**
-   - *How many views do videos from USA channels need to reach a monetization of one million dollars?*
+1. Create a calculated field that shows the monetization value of the video and another with the taxes generated.
+2. Calculate the total monetization per channel and the taxes paid by each.
+3. Considering that the monetization goal for channels in Mexico is the average monetization of that country, determine the gap that channels in Mexico need to reach the goal.
+4. Determine the number of views required for videos from channels in the USA to reach a monetization of one million dollars.
+5. Identify the channels in Colombia that have been most exempt from taxes.
+6. Determine which country among the specified ones has the highest monetization.
+7. Based on the group's opinion, decide what is more convenient for Colombia: opening a health and wellness channel or a gardening channel (classification 24).
+8. Determine which is more convenient in Mexico: a gardening channel (classification 24) or a gaming channel (classification 23).
+9. If the CMP of the USA were reduced by 25%, would the income in Mexico be higher than in the USA?
 
-5. **Cuáles son los canales de Colombia que han sido más exonerados de impuestos.**
-   - *Which channels in Colombia have been most exempted from taxes?*
+## Data Source
 
-6. **En qué país de los indicados se tiene una mayor monetización.**
-   - *Which of the indicated countries has the highest monetization?*
-
-7. **Según la opinión del grupo, qué es más conveniente para Colombia, abrir un canal de salud y bienestar o un canal de jardinería (clasificación 24).**
-   - *According to the group's opinion, what is more convenient for Colombia: opening a health and wellness channel or a gardening channel (classification 24)?*
-
-8. **En México, qué es más conveniente, un canal de jardinería (clasificación 24) o un canal de videojuegos (clasificación 23).**
-   - *In Mexico, what is more convenient: a gardening channel (classification 24) or a video game channel (classification 23)?*
-
-9. **Si el CPM de USA se redujera en un 25%, ¿los ingresos en México serían mayores a los de USA?**
-   - *If the CPM in the USA were reduced by 25%, would the revenues in Mexico be higher than those in the USA?*
-
-## Important Considerations
-
-YouTube monetizes video views based on several criteria that content creators must meet. For this analysis, the following considerations are applied:
-
-- **Monetization Eligibility**: Only videos with comments enabled and without classifications 29, 19, and 27 are considered for monetization. These classifications represent video types not paid by YouTube.
-- **Cost per Mille (CPM)**: Monetization is based on the number of views, with payment made per 1000 views (CPM). The CPM varies by country.
-- **Taxation**: Some countries impose taxes on income generated through digital platforms. In this analysis:
-  - Colombia imposes a 10% tax on video income, except for videos classified under 26 (health and wellness), which are exempt.
-  - If a country is not listed in the CPM data, the default CPM of the United Kingdom is used.
+The dataset used in this project is from Kaggle.
 
 ## Project Structure
 
-The project includes the following components:
+The repository contains the following files:
 
-- **Database Backup**: Backup of the tables used in the analysis.
-- **SQL Queries**: The SQL scripts used to answer the business questions.
+- `backup_AnalisisMonetizacionYoutube.zip`: This file contains the backup to create the database with the tables and populate them.
+- `Consultas.sql`: This file contains the SQL queries used to answer the project questions.
+- `output_table_example.png`: An example image of the output table for the first question.
 
-## Table of Contents
+## Instructions
 
-1. [Database Backup](#database-backup)
-2. [SQL Queries](#sql-queries)
-3. [Important Considerations](#important-considerations)
-4. [Contact](#contact)
+To run this project:
 
-## Database Backup
+1. Download the repository.
+2. Open and run `backup_AnalisisMonetizacionYoutube.zip` to set up the database with all necessary information.
+3. Open and run `Consultas.sql` to execute the queries that answer the specified questions.
 
-The backup of the tables used in this project is provided in the `database_backup` directory. Ensure to restore these tables in your SQL environment to run the analysis queries.
-
-## SQL Queries
-
-The SQL queries used to answer the business questions are included in the `sql_queries` directory. Each file corresponds to a specific question outlined in the project description.
+There are no additional prerequisites or dependencies required.
 
 ## Contact
 
-For any questions or further information, please contact:
+For questions or feedback, please contact me via:
 
-- [LinkedIn](<https://www.linkedin.com/in/albertoromero-dataanalyst>)
-- [Email](mailto:alberto.mendez1710@gmail.com)
-
-Feel free to connect and discuss the project or any other data analysis inquiries.
-
----
-
-Thank you for exploring the YouTube Monetization Data Analysis project. We hope you find the insights valuable and the analysis helpful.
+- Email: [josuejr7.m@gmail.com](mailto:josuejr7.m@gmail.com)
+- LinkedIn: [www.linkedin.com/in/josueromero-dataanalyst](https://www.linkedin.com/in/josueromero-dataanalyst)
